@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Smart Class Scheduler</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Smart Class Scheduler</div>
+      <div class="user-info">
+        <span id="admin-name">Welcome, Admin</span>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </nav>
+
+    <main>
+      <section id="user-management">
+        <h2>User Management</h2>
+        <div id="user-list"></div>
+        <button id="add-user-btn">Add New User</button>
+      </section>
+
+      <section id="course-management">
+        <h2>Course Management</h2>
+        <div id="course-list"></div>
+        <button id="add-course-btn">Add New Course</button>
+      </section>
+
+      <section id="schedule-management">
+        <h2>Schedule Management</h2>
+        <div id="schedule-list"></div>
+        <button id="generate-schedule-btn">Generate Schedule</button>
+      </section>
+
+      <section id="announcement-management">
+        <h2>Announcement Management</h2>
+        <div id="admin-announcements-list"></div>
+        <button id="add-announcement-btn">Add New Announcement</button>
+      </section>
+    </main>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <form id="modal-form"></form>
+      </div>
+    </div>
+
+    <script src="admin_dashboard.js"></script>
+  </body>
+</html>

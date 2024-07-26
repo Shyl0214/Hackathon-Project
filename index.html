@@ -3,113 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart Class Scheduler - Home</title>
-    <link rel="stylesheet" href="home.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Student Home - Smart Class Scheduler</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container">
-      <nav class="sidebar">
-        <div class="logo">SC</div>
-        <ul>
-          <li class="active"><i class="fas fa-home"></i> My Schedule</li>
-          <li><i class="fas fa-book"></i> Course Planner</li>
-          <li><i class="fas fa-chart-bar"></i> Study Analytics</li>
-          <li><i class="fas fa-clock"></i> Time Blocks</li>
-          <li><i class="fas fa-calendar-alt"></i> Study Rooms</li>
-        </ul>
-      </nav>
-      <main>
-        <header>
-          <div class="search-bar">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search for courses" />
-          </div>
-          <div class="user-actions">
-            <i class="fas fa-bell"></i>
-            <i class="fas fa-cog"></i>
-            <div class="user-avatar">S</div>
-          </div>
-        </header>
-        <div class="content">
-          <h1>Good morning, Student</h1>
-          <p>Here's your courses and schedule for amount today</p>
-          <button class="optimize-btn">Optimize Schedule</button>
+    <nav>
+      <div class="logo">Smart Class Scheduler</div>
+      <div class="user-info">
+        <span id="student-name">Welcome, Student</span>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </nav>
 
-          <div class="dashboard">
-            <div class="upcoming-events">
-              <h2>Upcoming Events</h2>
-              <div class="event">
-                <div class="event-time">9:00 AM</div>
-                <div class="event-name">Math Seminar</div>
-              </div>
-              <div class="event">
-                <div class="event-time">11:30 AM</div>
-                <div class="event-name">Study Group</div>
-              </div>
-            </div>
+    <main>
+      <section id="timetable">
+        <h2>Your Timetable</h2>
+        <div id="timetable-container"></div>
+      </section>
 
-            <div class="progress-overview">
-              <h2>Progress Overview</h2>
-              <div class="progress-bar">
-                <div class="progress" style="width: 65%"></div>
-              </div>
-              <p>65% of courses completed</p>
-            </div>
+      <section id="notifications">
+        <h2>Notifications</h2>
+        <div id="notifications-container"></div>
+      </section>
+    </main>
 
-            <div class="quick-actions">
-              <div class="action-item">
-                <i class="fas fa-plus-circle"></i>
-                <span>Add Course</span>
-              </div>
-              <div class="action-item">
-                <i class="fas fa-calendar-plus"></i>
-                <span>Schedule Study</span>
-              </div>
-              <div class="action-item">
-                <i class="fas fa-question-circle"></i>
-                <span>Help Center</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="schedule-overview">
-            <h2>Course Schedule Overview</h2>
-            <div class="schedule-items">
-              <div class="schedule-item">
-                <div
-                  class="course-color"
-                  style="background-color: #4caf50"
-                ></div>
-                <div class="course-details">
-                  <h3>Biology 101</h3>
-                  <p>Mon, Wed, Fri - 10:00 AM</p>
-                </div>
-              </div>
-              <div class="schedule-item">
-                <div
-                  class="course-color"
-                  style="background-color: #2196f3"
-                ></div>
-                <div class="course-details">
-                  <h3>Computer Science 202</h3>
-                  <p>Tue, Thu - 2:00 PM</p>
-                </div>
-              </div>
-              <div class="schedule-item">
-                <div
-                  class="course-color"
-                  style="background-color: #ff9800"
-                ></div>
-                <div class="course-details">
-                  <h3>History 150</h3>
-                  <p>Mon, Wed - 1:00 PM</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
+    <script src="index.js"></script>
   </body>
 </html>

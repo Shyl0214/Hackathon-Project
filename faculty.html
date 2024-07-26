@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Dashboard - Smart Class Scheduler</title>
+    <link rel="stylesheet" href="faculty.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Smart Class Scheduler</div>
+      <div class="user-info">
+        <span id="teacher-name">Welcome, Teacher</span>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </nav>
+
+    <main>
+      <section id="create-announcement">
+        <h2>Create Announcement</h2>
+        <form id="announcement-form">
+          <input
+            type="text"
+            id="announcement-title"
+            placeholder="Announcement Title"
+            required
+          />
+          <textarea
+            id="announcement-message"
+            placeholder="Announcement Message"
+            required
+          ></textarea>
+          <button type="submit">Post Announcement</button>
+        </form>
+      </section>
+
+      <section id="view-announcements">
+        <h2>Recent Announcements</h2>
+        <div id="announcements-list"></div>
+      </section>
+    </main>
+
+    <script src="teacher_dashboard.js"></script>
+  </body>
+</html>
